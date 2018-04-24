@@ -10,4 +10,4 @@ Feature: User can sign up
     And I fill "Password" with "password123"
     And I fill "Password confirmation" with "password123"
     And I click "Sign up"
-    And I should see message "Welcome! You have signed up successfully."
+  
