@@ -3,7 +3,7 @@ Given("I visit the site") do
 end
 
 Then("I click {string}") do |link|
-  click_link link
+  click_link_or_button link
 end
 
 Then("I fill {string} with {string}") do |input, value|
