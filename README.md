@@ -1,24 +1,48 @@
-# README
+## Star Wars Fan Application  
+ 
+## Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application which displays a overview of all Star Wars resources by using Star Wars public API (swapi.co/api). 
 
-Things you may want to cover:
+ 
+## Final objective
 
-* Ruby version
+- The user opens your app and gets a login screen. He has to login. After a successful login he is navigated to the overview page. If the user is logged in, he can refresh the browser and has not to login again. 
+- The user has a list of all Star Wars resources, where he can filter for resource types (like people, starships...).
+- The overview should include a search element, which searches anything in the any resource.
+- The user clicks on a resource item and gets a detail view over it.
 
-* System dependencies
+## Final result 
 
-* Configuration
 
-* Database creation
+## Getting Started
 
-* Database initialization
+Interested in my codes?
+You can clone my repo!
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## See the App in the Browser
 
-* Deployment instructions
+In your terminal run the following command to start a local server and run the application:
 
-* ...
+```
+rails s
+```
+
+## Testing
+
+* Cucumber for feature testing
+
+## Technologies
+
+Ruby on rails
+JavaScript
+Html
+Css
+
+## Authors
+
+* **Isabelle Lidberg**: https://github.com/isabellelii
+
+## Deployed to Heroku 
+https://starwarsfanapp.herokuapp.com/ (WIP)
