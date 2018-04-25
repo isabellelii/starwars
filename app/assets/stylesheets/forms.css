@@ -1,0 +1,30 @@
+a {
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.field {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+}
+
+body,
+element.style {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  max-height: 500px;
+}
