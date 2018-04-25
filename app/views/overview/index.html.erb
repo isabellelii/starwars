@@ -1,1 +1,24 @@
 <h1> STAR WARS</h1>
+
+<section id="people">
+
+   </section>
+
+   <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function(){
+
+       fetch('https://swapi.co/api/')
+       .then(function(response) {
+         const element = document.getResources;
+         response.json().then(function(json){
+           const people = json;
+           people.forEach(function(people){
+
+             var div = document.createElement('div');
+             div.innerHTML = `<h2> ${people.name}</h2>`
+             element.appendChild(div);
+           })
+         });
+       })
+     })
+   </script>
