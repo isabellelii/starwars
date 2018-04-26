@@ -1,0 +1,83 @@
+<h1>PLANETS</h1>
+<div id="list"></div>
+
+<div class="container text-center">
+  <p>
+    <button id="next" class="btn btn-warning btn-sml" role="button">Continue »</button>
+  </p>
+
+  <script type="text/javascript">
+
+    document.addEventListener('DOMContentLoaded', showPlanets);
+
+    function showPlanets() {
+      var list = document.getElementById('list');
+      var f = 1;
+      var req = new XMLHttpRequest();
+      var URLhost = 'https://swapi.co/api/planets/?page=' + f;
+      req.open('GET', URLhost, true);
+      req.addEventListener('load', function () {
+        if (req.status >= 200 && req.status < 400) {
+          var response = JSON.parse(req.responseText);
+          console.log(response);
+          var planetHead = document.createElement('h3');
+          list.appendChild(planetHead);
+          planetHead.textContent = 'Planets Page - ' + f;
+          var planetList = document.createElement('ol');
+          planetHead.appendChild(planetList);
+
+          for (var k = 0; k < response.results.length; k++) {
+            (function (y) {
+              var planetIn = document.createElement('li');
+              planetIn.textContent = response.results[y].name;
+
+
+
+              planetList.appendChild(planetIn);
+            })(k);
+          }
+        } else {
+          console.log('Error in network request: ' + req.statusText);
+        }
+      });
+      req.send(null);
+      event.preventDefault();
+
+      document.getElementById('next').addEventListener('click', function (event) {
+        if (f < 7) {
+          list.innerHTML = "";
+          f++;
+          var req = new XMLHttpRequest();
+          var URLhost = 'https://swapi.co/api/planets/?page=' + f;
+          req.open('GET', URLhost, true);
+          req.addEventListener('load', function () {
+            if (req.status >= 200 && req.status < 400) {
+              var response = JSON.parse(req.responseText);
+              var planetHead = document.createElement('h3');
+              list.appendChild(planetHead);
+              planetHead.textContent = 'Planets Page - ' + f;
+              var planetList = document.createElement('ol');
+              planetHead.appendChild(planetList);
+
+              for (var k = 0; k < response.results.length; k++) {
+                (function (y) {
+                  var planetIn = document.createElement('li');
+                  planetIn.textContent = response.results[y].name;
+                  planetList.appendChild(planetIn);
+                })(k);
+              }
+
+            } else {
+              console.log('Error in network request: ' + req.statusText);
+            }
+          });
+          req.send(null);
+          event.preventDefault();
+        }
+      });
+    }
+
+
+
+  </script>
+</div>
