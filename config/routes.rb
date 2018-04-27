@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root controller: :overview, action: :index
 
   resources :planets, only: :index
+  resources :people, only: :index
+
 
 
 end
