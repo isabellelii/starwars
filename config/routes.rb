@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   resources :planets, only: :index
   resources :people, only: :index
+  resources :films, only: :index
+
 
 
 
