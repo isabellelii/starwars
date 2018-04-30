@@ -14,6 +14,8 @@ Rails.application.config.assets.precompile += %w( people.js )
 Rails.application.config.assets.precompile += %w( films.js )
 Rails.application.config.assets.precompile += %w( speices.js )
 Rails.application.config.assets.precompile += %w( vehicles.js )
+Rails.application.config.assets.precompile += %w( spaceships.js )
+
 
 
 

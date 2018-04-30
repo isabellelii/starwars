@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-
-  get 'spaceships/index'
-
   devise_for :users
 
   root controller: :overview, action: :index
@@ -11,6 +8,5 @@ Rails.application.routes.draw do
   resources :films, only: :index
   resources :speices, only: :index
   resources :vehicles, only: :index
-
-
+  resources :spaceships, only: :index
 end
