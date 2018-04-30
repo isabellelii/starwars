@@ -1,2 +1,2 @@
-module VehicalsHelper
+module VehiclesHelper
 end
