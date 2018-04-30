@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   resources :people, only: :index
   resources :films, only: :index
   resources :speices, only: :index
+  resources :vehicals, only: :index
+
 
 end

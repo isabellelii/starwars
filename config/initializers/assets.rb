@@ -13,6 +13,8 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( people.js )
 Rails.application.config.assets.precompile += %w( films.js )
 Rails.application.config.assets.precompile += %w( speices.js )
+Rails.application.config.assets.precompile += %w( vehicles.js )
+
 
 
 # folder are already added.
