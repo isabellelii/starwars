@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-
-  get 'speices/index'
-
   devise_for :users
 
   root controller: :overview, action: :index
@@ -10,8 +7,6 @@ Rails.application.routes.draw do
   resources :planets, only: :index
   resources :people, only: :index
   resources :films, only: :index
-
-
-
+  resources :speices, only: :index
 
 end

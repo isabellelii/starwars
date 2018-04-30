@@ -12,6 +12,8 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 Rails.application.config.assets.precompile += %w( people.js )
 Rails.application.config.assets.precompile += %w( films.js )
+Rails.application.config.assets.precompile += %w( speices.js )
+
 
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
