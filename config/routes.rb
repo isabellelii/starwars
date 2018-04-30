@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'spaceships/index'
+
   devise_for :users
 
   root controller: :overview, action: :index
