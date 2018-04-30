@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'speices/index'
+
   devise_for :users
 
   root controller: :overview, action: :index
