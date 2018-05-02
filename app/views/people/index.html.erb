@@ -1,5 +1,18 @@
+<container class="searchfield">
+  <form onsubmit="doSearch(event, this)">
+  <label>Search:
+    <input type="text" id="search-input" name="searchText" value="sky" />
+  </label>
+  <button type="submit">Search</button>
+</form>
+
+<div id="result-count"></div>
+<table id="result-table"></table>
+</container>
+
+
 <div class="peoplelist" id="peoplelist">
-  <h1>People</h1>
+
 </div>
 
 <%= javascript_include_tag "people" %>
