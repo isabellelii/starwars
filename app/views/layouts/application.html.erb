@@ -18,8 +18,9 @@
   <body>
     <header>
       <nav class="navbar navbar-dark bg-dark justify-content-between">
-        <a class="navbar-brand" href="/">Star Wars overview</a>
-        <p class="navbar-text pull-right">
+        <a class="navbar-brand" href="/">
+        <img src="https://seeklogo.com/images/S/Star_Wars-logo-2B2C24F703-seeklogo.com.png" style="width:142px;height:100px;/></a>
+        <p class="navbar-text pull-left">
           <% if user_signed_in? %>
             Logged in as
             <strong><%= current_user.email %></strong>.
@@ -27,15 +28,12 @@
           <% else %>
             <%= link_to "Create account", new_user_registration_path, :class => 'navbar-link' %>
             |
-            <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+            <%= link_to "Login", new_user_session_path, :class => 'navbar-link2' %>
           <% end %>
         </p>
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </nav>
     </header>
+
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
