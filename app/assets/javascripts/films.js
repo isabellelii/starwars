@@ -9,8 +9,6 @@ function getInfo() {
       response.json().then(function(json){
          appendUsersToSection(json.results)
       })
-  }).catch(function(error) {
-    updateInfoWithError()
   })
 }
 
