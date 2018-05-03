@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   let button = document.querySelector('#viewPeople').then
   getInfo();
@@ -58,35 +57,35 @@ viewPeople.addEventListener('click', getInfo)
 
 // search function
 
-function doSearch(e, form){
+function doSearch(e, form) {
   e.preventDefault();
   let searchText = form.searchText.value;
   window.fetch(`https://swapi.co/api/people/?search=${encodeURIComponent(searchText)}`)
-  .then((response) => response.json())
-  .then(showResults)
-  .catch((e) => {
-    console.log(JSON.stringify(e));
-  })
+    .then((response) => response.json())
+    .then(showResults)
+    .catch((e) => {
+      console.log(JSON.stringify(e));
+    })
 }
 
 function showResults(result) {
   document.getElementById('result-count').innerHTML = result.count +
     (result.count === 1 ?
-    ' result' :
-    ' results');
+      ' result' :
+      ' results');
 
-  if ( result.count > 0 ) {
+  if (result.count > 0) {
     fillTable(result.results);
   }
 }
 
-function fillTable(results){
+function fillTable(results) {
   const target = document.getElementById('result-table');
   const header = document.createElement('thead');
   const headerRow = document.createElement('tr');
   header.appendChild(headerRow);
 
-  for( let key in results[0] ) {
+  for (let key in results[0]) {
     const headerCell = document.createElement('th');
     headerCell.innerText = key;
     headerRow.appendChild(headerCell);
@@ -95,7 +94,7 @@ function fillTable(results){
   const body = document.createElement('tbody');
   results.forEach((result) => {
     const row = document.createElement('tr');
-    for(let key in result){
+    for (let key in result) {
       const cell = document.createElement('td');
       cell.innerText = result[key];
       row.appendChild(cell);
