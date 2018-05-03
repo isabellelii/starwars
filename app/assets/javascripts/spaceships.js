@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
+  let button = document.querySelector('#viewShips').then
   getInfo();
 });
 
@@ -39,6 +40,9 @@ function formatUserDiv(ship) {
           })
 
   }
+
+  viewShips.addEventListener('click', getInfo)
+
   // search function
 
   function doSearch(e, form){

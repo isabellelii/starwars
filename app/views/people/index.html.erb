@@ -1,4 +1,4 @@
-<container class="searchfield">
+ <container class="searchfield">
   <form onsubmit="doSearch(event, this)">
   <label>Search:
     <input type="text" id="search-input" name="searchText" value="sky" />
@@ -10,9 +10,11 @@
 <table id="result-table"></table>
 </container>
 
+<button type="button" id="viewPeople" name="button">Click here to view list of people</button>
 
 <div class="peoplelist" id="peoplelist">
-
+  <h1>People</h1>
 </div>
+
 
 <%= javascript_include_tag "people" %>

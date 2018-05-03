@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
+  let button = document.querySelector('#viewSpecies').then
   getInfo();
 });
 
@@ -43,6 +44,9 @@ function formatUserDiv(animal) {
 
 
   }
+
+  viewSpecies.addEventListener('click', getInfo)
+
 
 
 function getHomeworld(url) {

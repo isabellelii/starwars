@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
+  let button = document.querySelector('#viewVehicles').then
   getInfo();
 });
 
@@ -38,6 +39,9 @@ function formatUserDiv(transport) {
           })
 
   }
+
+  viewVehicles.addEventListener('click', getInfo)
+
 
   // search function
 
