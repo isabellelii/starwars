@@ -1,0 +1,180 @@
+a {
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.field {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+}
+
+body,
+element.style {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  max-height: 500px;
+}
+/* line 1, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+body {
+  background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=413d29f6051e59b9d2317d8d827c8279&auto=format&fit=crop&w=1070&q=80");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* line 7, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+.navbar {
+  height: 90px;
+}
+
+/* line 11, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+/* line 15, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+p {
+  color: #d9c940;
+  margin: 5px;
+}
+
+/* line 20, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+h1 {
+  color: #d9c940;
+  font-size: 50px;
+  font-family: monospace;
+}
+
+/* line 26, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+h2 {
+  color: #d9c940;
+}
+
+/* line 30, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+a {
+  color: #d9c940;
+}
+
+/* line 34, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+.navbar-link {
+  padding-left: 780px;
+}
+
+/* line 38, /Users/Isabelle/job/starwars/app/assets/stylesheets/overview.scss */
+.turbolinks-progress-bar {
+  height: 10px;
+  background-color: #d9c940;
+}
+/* line 1, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+th {
+  color: #d9c940;
+  overflow-x: hidden;
+}
+
+/* line 6, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+tr {
+  color: #d9c940;
+}
+
+/* line 10, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+table#result-table {
+  text-align-last: right;
+  table-layout: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #d9c940;
+}
+
+/* line 21, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+td {
+  word-wrap: break-word;
+  font-size: 12px;
+}
+
+/* line 26, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button {
+  background-color: black;
+  color: #d9c940;
+  cursor: grabbing;
+  border-color: #d9c940;
+}
+
+/* line 33, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+label {
+  color: #d9c940;
+}
+
+/* line 37, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+input {
+  background-color: black;
+  color: #d9c940;
+  border-color: #d9c940;
+}
+
+/* line 43, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button#viewPeople {
+  width: 600px;
+  height: 80px;
+}
+
+/* line 48, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button#viewPlanets {
+  width: 600px;
+  height: 80px;
+}
+
+/* line 53, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button#viewSpecies {
+  width: 600px;
+  height: 80px;
+}
+
+/* line 58, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button#viewShips {
+  width: 600px;
+  height: 80px;
+}
+
+/* line 63, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button#viewVehicles {
+  width: 600px;
+  height: 80px;
+}
+
+/* line 68, /Users/Isabelle/job/starwars/app/assets/stylesheets/people.scss */
+button#viewFilms {
+  width: 600px;
+  height: 80px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
