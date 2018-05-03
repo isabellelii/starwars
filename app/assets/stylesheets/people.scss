@@ -1,9 +1,6 @@
-
-
 th {
   color: #d9c940;
   overflow-x: hidden;
-
 }
 
 tr {
@@ -19,11 +16,56 @@ table#result-table {
   border-style: solid;
   border-width: 10px;
   border-color: #d9c940;
-
 }
 
 td {
   word-wrap: break-word;
   font-size: 12px;
+}
 
+button {
+  background-color: black;
+  color: #d9c940;
+  cursor: grabbing;
+  border-color: #d9c940;
+}
+
+label {
+  color: #d9c940;
+}
+
+input {
+  background-color: black;
+  color: #d9c940;
+  border-color: #d9c940;
+}
+
+button#viewPeople {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewPlanets {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewSpecies {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewSpaceships {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewVehicles {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewFilms {
+  width: 600px;
+  height: 80px;
 }
