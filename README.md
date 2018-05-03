@@ -27,7 +27,7 @@ Application which displays a overview of all Star Wars resources by using Star W
 
 To view the application localy on your computer: 
 1. Clone this repo
-2. Run bundle in your terminal to install all the gems includet in the project
+2. Run bundle in your terminal to install all the gems included in the project
 3. To see the App in the Browser:
 In your terminal run the following command to start a local server and run the application:
 
