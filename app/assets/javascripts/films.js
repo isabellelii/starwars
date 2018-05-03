@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
+  let button = document.querySelector('#viewFilms').then
   getInfo();
 });
+
 
 function getInfo() {
   let apiURL = 'https://swapi.co/api/films/'
@@ -35,6 +37,8 @@ function formatUserDiv(movie) {
         })
 
 }
+
+viewFilms.addEventListener('click', getInfo)
 
 // search function
 

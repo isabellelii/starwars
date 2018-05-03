@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
+  let button = document.querySelector('#viewPlanets').then
   getInfo();
 });
+
 
 function getInfo() {
   let apiURL = 'https://swapi.co/api/planets/'
@@ -38,6 +40,8 @@ function formatUserDiv(planet) {
           })
 
   }
+
+  viewPlanets.addEventListener('click', getInfo)
 
   // search function
 

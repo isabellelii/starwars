@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function() {
+  let button = document.querySelector('#viewPeople').then
   getInfo();
 });
 
@@ -51,6 +53,8 @@ function getHomeworld(url) {
   })
 
 }
+
+viewPeople.addEventListener('click', getInfo)
 
 // search function
 

@@ -1,28 +1,71 @@
-
-
 th {
-  color: white;
+  color: #d9c940;
   overflow-x: hidden;
-
 }
 
 tr {
-  color: white;
+  color: #d9c940;
 }
 
 table#result-table {
   text-align-last: right;
   table-layout: fixed;
   width: 100%;
+  height: 80px;
   background-color: black;
   border-style: solid;
-  border-width: 5px;
-  border-color: #de7931;
-
+  border-width: 10px;
+  border-color: #d9c940;
 }
 
 td {
   word-wrap: break-word;
   font-size: 12px;
+}
 
+button {
+  background-color: black;
+  color: #d9c940;
+  cursor: grabbing;
+  border-color: #d9c940;
+}
+
+label {
+  color: #d9c940;
+}
+
+input {
+  background-color: black;
+  color: #d9c940;
+  border-color: #d9c940;
+}
+
+button#viewPeople {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewPlanets {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewSpecies {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewSpaceships {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewVehicles {
+  width: 600px;
+  height: 80px;
+}
+
+button#viewFilms {
+  width: 600px;
+  height: 80px;
 }
